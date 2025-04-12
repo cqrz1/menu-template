@@ -1,0 +1,184 @@
+/* start var  */
+:root {
+  --h2: hsl(14, 45%, 36%);
+  --p: hsl(30, 10%, 34%);
+  --main-bck: #f3e5d8;
+  --card-color: hsl(0, 0%, 100%);
+}
+/* end var  */
+/* start global rules */
+* {
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global rules */
+
+/* start landing */
+.landing {
+  background-color: var(--main-bck);
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  background-color: var(--card-color);
+  width: 744px;
+  padding: 40px;
+  margin-top: 120px;
+  border-radius: 30px;
+}
+.image {
+  width: 100%;
+}
+img {
+  width: 100%;
+  border-radius: 11px;
+}
+.main-para h1 {
+  font-size: 43px;
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+.main-para p {
+  color: var(--p);
+  padding-bottom: 20px;
+}
+.prep {
+  background-color: #fff7fc;
+  border-radius: 15px;
+}
+.prep .content {
+  padding: 15px;
+  font-family: outfit;
+}
+.prep p {
+  padding-left: 24px;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+  font-size: 22px;
+}
+.prep ul {
+  padding-left: 48px;
+}
+.prep ul p {
+  padding-top: 10px;
+  color: var(--h2);
+  font-weight: 500;
+}
+.prep ul p span {
+  font-weight: 700;
+  font-family: outfit;
+}
+.ingred {
+  padding-top: 15px;
+}
+.ingred h2,
+.inst h2,
+.nut h2 {
+  font-size: 32px;
+  font-family: "Young Serif";
+  font-weight: 500;
+  color: var(--h2);
+}
+.ingred p {
+  padding-top: 5px;
+  padding-left: 25px;
+  font-size: 20px;
+  font-family: outfit;
+  font-weight: 400;
+}
+.ingred ul {
+  padding-left: 20px;
+  color: var(--h2);
+}
+.ingred ul:last-child {
+  padding-bottom: 10px;
+}
+.inst {
+  font-family: outfit;
+}
+.inst ol {
+  padding-left: 20px;
+  font-weight: 600;
+  color: var(--p);
+}
+.inst p {
+  text-transform: none;
+  padding-left: 25px;
+  font-weight: 400;
+}
+.inst span {
+  font-weight: 600;
+}
+.nut {
+  color: var(--p);
+  font-family: outfit;
+}
+.nut p {
+  text-transform: none;
+  font-size: 17px;
+}
+
+table {
+  width: 95%;
+  padding-left: 35px;
+}
+
+td {
+  padding-bottom: 20px;
+}
+#a {
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .menu {
+    margin-top: 0;
+    padding: 0;
+  }
+  .image {
+    width: 100%;
+    border-radius: none;
+  }
+  img {
+    width: 100%;
+  }
+  .mob-padding {
+    padding-left: 30px;
+    width: 95%;
+  }
+  .main-para p {
+    text-transform: none;
+    font-size: 20.5px;
+    line-height: 1.7;
+  }
+}
